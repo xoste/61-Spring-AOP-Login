@@ -4,19 +4,23 @@ import com.xoste.leon.mapper.UserMapper;
 import com.xoste.leon.pojo.User;
 import com.xoste.leon.service.UserService;
 
+import javax.annotation.Resource;
+
 /**
  * @author Xoste
  */
 public class UserServiceImpl implements UserService {
+    @Resource
     private UserMapper userMapper;
 
-    public UserMapper getUserMapper() {
+    
+/**public UserMapper getUserMapper() {
         return userMapper;
     }
 
     public void setUserMapper(UserMapper userMapper) {
         this.userMapper = userMapper;
-    }
+    }*/
 
     @Override
     public User userLogin(User user) {
